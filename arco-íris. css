@@ -25,3 +25,18 @@ button:hover {
     background-color: #45a049; /* verde mais escuro */
     transform: scale(1.1); /* aumenta um pouquinho o botão */
 }
+
+/* Espaçamento entre título, imagem e botão */
+h1 {
+    margin-bottom: 20px; /* espaço abaixo do título */
+}
+
+img {
+    display: block;       /* faz a imagem ficar em linha separada */
+    margin: 0 auto 20px;  /* centraliza a imagem e dá espaço embaixo */
+}
+
+button {
+    display: block;       /* faz o botão ficar em linha separada */
+    margin: 0 auto;       /* centraliza o botão */
+}
