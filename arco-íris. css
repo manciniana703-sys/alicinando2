@@ -40,3 +40,18 @@ button {
     display: block;       /* faz o botão ficar em linha separada */
     margin: 0 auto;       /* centraliza o botão */
 }
+
+ /* Fonte geral do site */
+body {
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Cor de fundo mais suave */
+body {
+    background-color: #fff0f5; /* lilás clarinho */
+}
+
+/* Bordas arredondadas na imagem */
+img {
+    border-radius: 10px;
+}
