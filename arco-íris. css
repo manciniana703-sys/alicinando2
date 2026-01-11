@@ -1,0 +1,27 @@
+/* Cor de fundo do site */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Estilo do título */
+h1 {
+    color: #ff69b4; /* rosa chamativo */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #4CAF50; /* verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Efeito quando passar o mouse no botão */
+button:hover {
+    background-color: #45a049; /* verde mais escuro */
+    transform: scale(1.1); /* aumenta um pouquinho o botão */
+}
