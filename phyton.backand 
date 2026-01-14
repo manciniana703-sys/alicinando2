@@ -1,0 +1,5 @@
+nome = input("Ana")
+idade = input("16")
+cidade = input("cacapava")
+
+print(f"ola, eu sou " {nome}, "tenho" {idade} , "sou de " {cidade}
