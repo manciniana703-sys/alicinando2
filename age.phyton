@@ -1,0 +1,6 @@
+idade: int(input: ("quantos anos?"))
+
+if idade >= 18:
+    print ("você é maior.")
+else:
+    print ("você não é.")
