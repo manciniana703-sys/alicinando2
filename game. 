@@ -1,0 +1,112 @@
+# ===========================================
+# JOGO DAS MISSÕES MÁGICAS — COMPLETO
+# ===========================================
+
+def apresentar_jogador(nome):
+    # Função para apresentar o jogador
+    print(f"\nBem-vinda ao reino, {nome}! Sua jornada começa agora.\n")
+
+
+def escolher_personagem():
+    # Função para escolher personagem
+    print("Escolha seu personagem:")
+    print("1 - Arqueira Luna")
+    print("2 - Mago Orion")
+    print("3 - Guerreiro Kael")
+
+    escolha = input("Digite 1, 2 ou 3: ")
+
+    if escolha == "1":
+        return "Arqueira Luna"
+    elif escolha == "2":
+        return "Mago Orion"
+    elif escolha == "3":
+        return "Guerreiro Kael"
+    else:
+        print("Opção inválida! Você será Kael por padrão.")
+        return "Guerreiro Kael"
+
+
+def missao_poder(personagem):
+    # Missão que usa If/Elif/Else
+    print(f"\nAgora, {personagem}, escolha seu poder inicial:")
+    print("5 - Chama Branca")
+    print("3 - Gelo Sombrio")
+    print("8 - Luz Divina")
+    print("7 - Tempestade Azul")
+
+    poder = int(input("Escolha um poder (5,3,8,7): "))
+
+    if poder == 5:
+        print("🔥 Você escolheu Chama Branca! Forte, mas instável.")
+    elif poder == 3:
+        print("❄️ Você escolheu Gelo Sombrio! Fraco, mas inteligente.")
+    elif poder == 8:
+        print("✨ Luz Divina! O mais raro de todos!")
+    elif poder == 7:
+        print("⚡ Tempestade Azul! Um poder equilibrado.")
+    else:
+        print("Poder inválido, você ficou com 5 por padrão!")
+        poder = 5
+
+    return poder
+
+
+def batalha_medusa(personagem, poder):
+    # Função com IF + ELIF + ELSE
+    print("\n⚠️ Medusa apareceu! Prepare-se para lutar!")
+    print("Ela tem poder 6.\n")
+
+    if poder > 6:
+        print(f"🎉 Parabéns, {personagem}! Você derrotou Medusa!")
+    elif poder == 6:
+        print(f"😬 {personagem}, foi quase... vocês empataram!")
+    else:
+        print(f"💀 Você perdeu, {personagem}... tente outra vez.")
+
+
+def repetir_frases():
+    # Função com FOR
+    print("\nVamos treinar seu grito de guerra!")
+    frase = input("Digite seu grito de guerra: ")
+
+    print("\nRepetindo 3 vezes para treinar:")
+    for x in range(3):
+        print(f"{x+1} - {frase}")
+
+
+def porta_final():
+    # Função com WHILE
+    print("\nVocê chegou à porta final do castelo.")
+    print("Ela só abre se você digitar a palavra secreta: 'luz'")
+
+    resposta = ""  # começa vazia
+
+    while resposta != "luz":
+        resposta = input("Digite a palavra secreta: ")
+
+        if resposta != "luz":
+            print("❌ Palavra errada! Tente de novo...")
+
+    print("✨ A porta abriu! Você venceu o jogo!\n")
+
+
+# ===============================
+# INÍCIO DO JOGO
+# ===============================
+
+nome = input("Qual é o seu nome, aventureira? ")
+
+apresentar_jogador(nome)
+
+personagem = escolher_personagem()
+
+poder = missao_poder(personagem)
+
+batalha_medusa(personagem, poder)
+
+repetir_frases()
+
+porta_final()
+
+print("🏆 Fim da aventura! Orgulho de você!")
